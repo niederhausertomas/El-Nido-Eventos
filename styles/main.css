@@ -1,0 +1,168 @@
+*{
+    color: white;
+}
+
+
+main{
+    background-color: rgba(11, 41, 11, 0.842);
+}
+
+/*---- NavBar ----*/
+
+.navbar{
+    background-color: rgb(11, 41, 11);
+    border-bottom: 2px solid black;
+}
+
+.navbar-brand img{
+    height: 50px;
+}
+
+.nav-item a{
+    color: white;
+    font-size: 25px;
+}
+
+#btnWhatsApp{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    height: 50px;
+    width: 50px;
+    line-height: 45px;
+    text-align: center;
+    fill: white;
+    background-color: #00cd55a1;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 50;
+}
+    
+#btnWhatsApp:hover{
+    height: 55px;
+    width: 55px;
+    line-height: 50px;
+    transition: 0.5s;
+    background-color: #00cd55e1;
+}
+
+#mailApp{
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    height: 50px;
+    width: 50px;
+    line-height: 45px;
+    text-align: center;
+    fill: white;
+    background-color: #428bca8a;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 50;
+}
+    
+#mailApp:hover{
+    height: 55px;
+    width: 55px;
+    line-height: 50px;
+    transition: 0.5s;
+    background-color: rgb(75, 135, 184);
+}
+
+#btnInstagram{
+    position: fixed;
+    top: 100px;
+    right: 40px;
+    height: 50px;
+    width: 50px;
+    line-height: 45px;
+    text-align: center;
+    fill: white;
+    background-color: #c135849c;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 50;
+}
+
+#btnInstagram:hover{
+    height: 55px;
+    width: 55px;
+    line-height: 50px;
+    transition: 0.5s;
+    background-color: #C13584;
+}
+
+/*---- Carousel ----*/
+
+
+.carousel-inner {
+    height: 100vh; 
+} 
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+    .carousel-inner {
+        margin-top: 80px;
+        height: 30vh; /* Altura de la mitad en pantallas pequeñas */
+    }
+}
+
+.carousel-item img {
+    width: 100%; 
+    object-fit: cover;
+}
+
+.subHeader{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.subHeader h2{
+    font-size: 50px;
+}
+
+.subHeader h3{
+    font-size: 30px;
+}
+
+
+/* -----todoLoQue Cards------- */
+
+.todoLoQue .card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.todoLoQue .card-body{
+    background-color: rgba(11, 41, 11, 0.842);
+}
+
+.todoLoQue .card-body .card-title{
+    color: white;
+}
+
+.todoLoQue{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+/* ------sentiContainer-------- */
+
+.sentiContainer{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.sentiContainer .card{   
+    background-color: rgba(22, 52, 22, 0.842);
+}
+
+.sentiContainer .card-title{
+    font-size: 50px;       
+}
+
+.sentiContainer .card-text{
+    font-size: 24px;     
+}
