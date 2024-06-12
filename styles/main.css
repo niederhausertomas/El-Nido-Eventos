@@ -184,6 +184,42 @@ main{
 }
 
 
+/*----- Tipos de eventos -----*/
+.tiposEventos{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.tiposEventos h2{
+    font-size: 60px;
+}
+
+.tiposEventos h3{
+    font-size: 30px;
+    font-style: italic;
+}
+
+/*----- Map Section ----- */
+
+.mapContainer{
+    background-color: rgb(39, 39, 39);
+    padding: 20px 0px;
+}
+
+.mapSection{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.mapSection h2{
+    font-size: 60px;
+}
+
+.mapSection h3{
+    font-size: 30px;
+    font-style: italic;
+}
+
 /* ------- CONTACT -------- */
 
 .containerForm{
