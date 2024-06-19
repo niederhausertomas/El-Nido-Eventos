@@ -5,13 +5,15 @@
 
 
 main{
-    background-color: rgb(60, 92, 60);
+    background: rgb(35,59,35);
+    background: linear-gradient(90deg, rgba(35,59,35,1) 0%, rgba(0,77,0,1) 52%, rgba(35,60,35,1) 100%);
 }
 
 /*---- NavBar ----*/
 
 .navbar{
-    background-color: none;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
 }
 
 .navbar-brand img{
@@ -19,11 +21,12 @@ main{
 }
 
 .navbar-scroll {
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
   
 .navbar-scroll.scrolled {
-    background-color: rgb(50, 75, 50) !important;
+    background: rgb(9,139,9)!important;
+    background: linear-gradient(90deg, rgba(9,139,9,1) 0%, rgba(45,94,45,1) 47%, rgba(50,75,50,1) 100%)!important;
 }
 
 .nav-item a{
@@ -114,6 +117,7 @@ main{
 
 .subHeader h2{
     font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .subHeader h3{
@@ -124,13 +128,6 @@ main{
 .carousel-inner {
     height: 100vh; 
 } 
-/* Media query para dispositivos móviles */
-@media (max-width: 767px) {
-    .carousel-inner {
-        margin-top: 80px;
-        height: 30vh; /* Altura de la mitad en pantallas pequeñas */
-    }
-}
 
 .carousel-item img {
     width: 100%; 
@@ -147,11 +144,13 @@ main{
 }
 
 .todoLoQue .card-body{
-    background-color: rgb(60, 92, 60);
+    background: rgb(35,59,35);
+    background: linear-gradient(90deg, rgba(35,59,35,1) 0%, rgba(0,77,0,1) 52%, rgba(35,60,35,1) 100%);
 }
 
 .todoLoQue .card-body .card-title{
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .todoLoQue{
@@ -166,17 +165,18 @@ main{
     margin-bottom: 70px;
     background-color: rgb(39, 39, 39);
     width: 100%;
-    padding: 20px 20px;
+    padding: 70px 70px;
 }
 
 .sentiContainer .card{   
-    background-color: rgb(60, 92, 60);
-    margin: 50px 50px;
+    background: rgb(35,59,35);
+    background: linear-gradient(90deg, rgba(35,59,35,1) 0%, rgba(0,77,0,1) 52%, rgba(35,60,35,1) 100%);
     padding: 0px 0px;
 }
 
 .sentiContainer .card-title{
-    font-size: 50px;       
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;       
 }
 
 .sentiContainer .card-text{
@@ -192,12 +192,74 @@ main{
 
 .tiposEventos h2{
     font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .tiposEventos h3{
     font-size: 30px;
     font-style: italic;
 }
+
+/* ---- galeria de fotos ------ */
+
+.gallery-container {
+    width: 90%;
+    max-width: 1200px;
+    border: 2px solid rgb(39, 39, 39);
+    border-radius: 10px;
+    background-color: rgb(39, 39, 39);
+    margin: 100px 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+}
+
+.gallery img {
+    width: calc(33.333% - 10px);
+    margin: 5px;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        width: calc(100% - 10px);
+    }
+}
+
+
+/* ------ video ------- */
+
+.video-container {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 100px 10px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
 
 /*----- Map Section ----- */
 
@@ -213,6 +275,7 @@ main{
 
 .mapSection h2{
     font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .mapSection h3{
@@ -351,4 +414,30 @@ footer {
 .aFooter div a.manu1:hover {
     cursor: pointer;
     color: #686767;
+}
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+
+    /*---- Carousel ----*/
+
+    .carousel-inner {
+        height: 30vh;
+    }
+        
+    .subHeader{
+        margin-top: 0px;
+    }
+
+    /* ------MAP------ */
+    .mapSection h2{
+        font-size: 40px;
+    }
+
+    /* ------sentiContainer-------- */
+
+    .sentiContainer{
+        padding: 20px 20px;
+    }
 }
