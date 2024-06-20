@@ -261,6 +261,89 @@ video {
 }
 
 
+/* ------- Futbol femenino y masculino --------------*/
+
+.image-container {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    margin: 50px 50px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.overlay-top {
+    top: 0;
+    bottom: auto;
+}
+
+.overlay-bottom {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.overlay-bottom div {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.overlay-bottom .double {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overlay-bottom .double div {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.overlay-bottom .full-width {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    margin: 20px 10px;
+}
+
+.overlay-top .full-width {
+    color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    margin: 20px 10px;
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    .container.d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .overlay-bottom .double {
+        flex-direction: column;
+    }
+
+    .overlay-bottom .double div {
+        margin: 5px 0;
+    }
+}
+
 /*----- Map Section ----- */
 
 .mapContainer{
