@@ -169,7 +169,6 @@ main{
 }
 
 .sentiContainer .card{   
-    background: rgb(35,59,35);
     background: linear-gradient(90deg, rgba(35,59,35,1) 0%, rgba(0,77,0,1) 52%, rgba(35,60,35,1) 100%);
     padding: 0px 0px;
 }
@@ -221,7 +220,7 @@ main{
     width: calc(33.333% - 10px);
     margin: 5px;
     border-radius: 10px;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -343,6 +342,92 @@ video {
         margin: 5px 0;
     }
 }
+
+/* ----------- Tertimoniales ----------- */
+.testimonials {
+    display: grid;
+    gap: 20px;
+    width: 80%;
+    max-width: 800px;
+    background-color: rgb(39, 39, 39);
+    margin: 100px 10px;
+    padding: 40px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+}
+
+.testimonial {
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 100px;
+    font-style: italic;
+    background: linear-gradient(90deg, rgba(35,59,35,1) 0%, rgba(0,77,0,1) 52%, rgba(35,60,35,1) 100%);
+
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+.testimonial-footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.user-name {
+    margin: 0;
+    padding-top: 30px;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+/* Media Queries para Responsiveness */
+@media (max-width: 600px) {
+    .testimonials {
+        display: block;
+        width: 90%;
+    }
+
+    .testimonial {
+        margin-bottom: 150px;
+    }
+
+    .user-image {
+        width: 150px;
+        height: 150px;
+        top: -50px;
+    }
+
+    .testimonial-text {
+        font-size: 0.9rem;
+        padding-bottom: 20px;
+    }
+
+    .user-name {
+        padding-top: 40px;
+        font-size: 1.5rem;
+    }
+}
+
 
 /*----- Map Section ----- */
 
