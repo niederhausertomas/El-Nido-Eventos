@@ -175,11 +175,18 @@ main{
 
 .sentiContainer .card-title{
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;       
+    font-family: Arial, Helvetica, sans-serif;     
+    padding: 20px 20px;  
 }
 
 .sentiContainer .card-text{
-    font-size: 24px;     
+    font-size: 18px;     
+    padding: 20px 20px;
+    padding-top: 0;
+}
+
+.sentiContainer img{
+    height: 100%;
 }
 
 
@@ -418,16 +425,27 @@ video {
     }
 
     .testimonial-text {
-        font-size: 0.9rem;
-        padding-bottom: 20px;
+        font-size: 25px;
+        padding: 40px 5px;
     }
 
     .user-name {
         padding-top: 40px;
-        font-size: 1.5rem;
+        font-size: 30px;
     }
 }
 
+
+/* ---- tipos de eventos ----- */
+
+.tiposEventos h2{
+    font-size: 40px;
+}
+
+.tiposEventos h3{
+    margin-top: 30px;
+    font-size: 25px;
+}
 
 /*----- Map Section ----- */
 
@@ -588,15 +606,48 @@ footer {
 /* Media query para dispositivos móviles */
 @media (max-width: 767px) {
 
+    /* --- navbar --- */
+
+    .navbar-toggler {
+        background-color:rgb(35,59,35)!important;
+        fill: white!important;
+    }
+
+    .navbar-collapse{
+        background-color:rgba(35, 59, 35, 0.603)!important;
+    }
+
+    #mailApp{
+        right: 150px;
+    }
+
+
+
     /*---- Carousel ----*/
 
     .carousel-inner {
-        height: 30vh;
+        height: 50vh;
+    }
+
+    .carousel-item img{
+        height: 50vh;
     }
         
     .subHeader{
-        margin-top: 0px;
+        margin-top: 90px;
     }
+
+    .subHeader h2{    
+        font-size: 40px;
+        margin: 20px 20px;
+    }
+
+    .subHeader h3{
+        margin-top: 0px;
+        font-size: 25px;
+        margin: 20px 20px;
+    }
+
 
     /* ------MAP------ */
     .mapSection h2{
@@ -606,6 +657,6 @@ footer {
     /* ------sentiContainer-------- */
 
     .sentiContainer{
-        padding: 20px 20px;
+        padding: 30px 30px;
     }
 }
